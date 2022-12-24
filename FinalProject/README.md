@@ -3,6 +3,8 @@
 ### How to run (need to change to path of boost library).
 g++ -std=c++17 main.cpp -o test -I D:/CLib/boost_1_75_0 -L D:/CLib/boost_1_75_0/lib
 
+#### Note: a problem is when I use g++ it will not run marketdata parts, while when I use Visual studio 2019 it works. I can't figure out the reason. So .txt outputs files from marketdata are obtain via Visuual studio 2019.
+
 ### Definition and structure
 #### Definition
 Develop a bond trading system for US Treasuries with seven securities: 2Y, 3Y, 5Y, 7Y, 10Y, 20Y, and 30Y. Look up the CUSIPS, coupons, and maturity dates for each security. Ticker is T.
