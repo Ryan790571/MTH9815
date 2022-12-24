@@ -287,7 +287,7 @@ void AlgoExecutionService<T>::AlgoExecuteOrder(OrderStacks<T>& orderBook)
 	double offerPrice = bestOffer.GetPrice();
 	long offerQuantity = bestOffer.GetQuantity();
 
-	if (offerPrice - bidPrice <= 1.0/128.0)
+	if (offerPrice - bidPrice <= 1.1/128.0)
 	{
 		// We all use Market orders
 		// We are crossing the spread, so BID will get offer price.
