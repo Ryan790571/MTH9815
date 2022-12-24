@@ -127,10 +127,10 @@ public:
   const T& GetProduct() const;
 
   // Get the bid stack
-  vector<Order>& GetBidStack() const;
+  const vector<Order>& GetBidStack() const;
 
   // Get the offer stack
-  vector<Order>& GetOfferStack() const;
+  const vector<Order>& GetOfferStack() const;
 
   // Get best bid and offer price
   BidOffer& GetBestBidOffer() const;
@@ -155,13 +155,13 @@ const T& OrderStacks<T>::GetProduct() const
 }
 
 template<typename T>
-vector<Order>& OrderStacks<T>::GetBidStack() const
+const vector<Order>& OrderStacks<T>::GetBidStack() const
 {
 	return bidStack;
 }
 
 template<typename T>
-vector<Order>& OrderStacks<T>::GetOfferStack() const
+const vector<Order>& OrderStacks<T>::GetOfferStack() const
 {
 	return offerStack;
 }
